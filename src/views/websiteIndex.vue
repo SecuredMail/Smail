@@ -1,16 +1,16 @@
 <template>
-  <div>
+    <div>
 
-  </div>
+    </div>
 </template>
 
 <script>
 export default {
-  setup () {
-    
+    setup () {
+        
 
-    return {}
-  }
+        return {}
+    }
 }
 </script>
 
