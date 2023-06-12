@@ -11,6 +11,8 @@
     "@headlessui/vue": "^1.7.14",
     "@heroicons/vue": "^2.0.18",
     "register-service-worker": "^1.7.2",
+    "sass": "^1.63.3",
+    "sass-loader": "^13.3.2",
     "tailwindcss": "^3.3.2",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",

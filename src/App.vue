@@ -1,16 +1,19 @@
 <template>
-  <div>
-
+  <div class="flex flex-col min-h-screen font-Roboto bg-background">
+    <RouterView />
+    <siteNavigation />
   </div>
 </template>
 
 <script>
-export default {
-  setup () {
-    
+import { RouterView } from 'vue-router'
+import siteNavigation from '@/components/siteNavigation.vue'
 
-    return {}
-  }
+export default {
+  name: "App",
+  components: {
+            siteNavigation,
+        }
 }
 </script>
 
