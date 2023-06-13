@@ -9,7 +9,7 @@
                         <button
                             class="mx-2 my-2 bg-gray-200 transition duration-150 ease-in-out focus:outline-none hover:bg-button hover:text-white rounded text-indigo-700 px-6 py-2 text-xs">Sign In</button>
                     </div>
-                    <button class="mx-2 my-2 bg-indigo-700 transition duration-150 ease-in-out hover:bg-white hover:text-button rounded text-white px-6 py-2 text-xs hidden sm:flex">Create an account</button>
+                    <button class="mx-2 my-2 bg-button transition duration-150 ease-in-out hover:bg-white hover:text-button rounded text-white px-6 py-2 text-xs hidden sm:flex">Create an account</button>
                 </div>
         </nav>
     </header>

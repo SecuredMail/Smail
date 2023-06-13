@@ -11,6 +11,7 @@
     "@headlessui/vue": "^1.7.14",
     "@heroicons/vue": "^2.0.18",
     "@quasar/extras": "^1.16.4",
+    "aos": "^2.3.4",
     "register-service-worker": "^1.7.2",
     "sass": "1.32.12",
     "sass-loader": "^13.3.2",
