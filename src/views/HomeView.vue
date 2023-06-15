@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col min-h-screen font-Roboto bg-background grid-cols-12">
+    <div class="flex flex-col min-h-screen font-Roboto bg-sidebar grid-cols-12">
         <SiteNavigation />
         <div class="container flex flex-col sm: flex-row gap-4 text-black py-6 ">
             <section id="hero" class="w-full pb-24">
@@ -42,12 +42,8 @@
                         </div> -->
                     <img data-aos="fade-up" data-aos-delay="300" :src="require('@/assets/pattern/ellipse-1.png')"
                         class="hidden sm:block absolute bottom-12 xl:bottom-16 left-4 xl:left-0 w-6" />
-                    <!-- <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('@/assets/pattern/ellipse-2.png')"
-          class="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6"
-        /> -->
+                    <img data-aos="fade-up" data-aos-delay="300" :src="require('@/assets/pattern/ellipse-2.png')"
+                        class="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6" />
                     <img data-aos="fade-up" data-aos-delay="300" :src="require('@/assets/pattern/ellipse-3.png')"
                         class="hidden sm:block absolute bottom-56 right-24 w-6" />
                     <img data-aos="fade-up" data-aos-delay="300" :src="require('@/assets/pattern/star.png')"
@@ -91,7 +87,7 @@ export default {
 }
 
 .image-container {
-  width: 800px; 
-  height: 500px;
+    width: 800px;
+    height: 500px;
 }
 </style>
