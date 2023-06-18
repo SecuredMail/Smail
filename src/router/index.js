@@ -4,6 +4,8 @@ import LoginView from '../views/LoginView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import DateView from '../views/DateView.vue'
 import Editor from '@/components/editorInput.vue'
+import InboxPage from '../views/InboxPage.vue'
+import Sidebar from '@/components/sideBar.vue'
 
 const routes = [
   {
@@ -30,6 +32,16 @@ const routes = [
     path: '/editor',
     name: 'editor',
     component: Editor
+  },
+  {
+    path: '/inbox',
+    name: 'inboxpage',
+    component: InboxPage
+  },
+  {
+    path: '/sidebar',
+    name: 'sidebar',
+    component: Sidebar
   }
   
   // {
