@@ -51,14 +51,17 @@
                 </BaseSection>
             </section>
         </div>
+        <FooterBar class="mt-auto" />
     </div>
 </template>
 
 <script>
 import SiteNavigation from '@/components/siteNavigation.vue';
+import FooterBar from '@/components/footerBar.vue'
 export default {
     components: {
         SiteNavigation,
+        FooterBar,
     },
     setup() {
 

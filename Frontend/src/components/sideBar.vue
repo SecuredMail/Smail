@@ -62,29 +62,48 @@
         <div class="w-full mt-12">
             <h1 class="text-xl text-gray-500 px-8 mb-4">Labels</h1>
             <ul class="space-y-4 py-1">
-                <li class="hover:bg-gray-100 py-1 px-7"><span class="badge gap-5 ">
-                        <span class="badge-dot bg-gray-500"></span>
-                        Personal
-                    </span></li>
-                <li class="hover:bg-gray-100 py-1 px-7"><span class="badge gap-5">
-                        <span class="badge-dot bg-red-700"></span>
-                        School
-                    </span></li>
-                <li class="hover:bg-gray-100 py-1 px-7"><span class="badge gap-5">
-                        <span class="badge-dot bg-yellow-800"></span>
-                        Office
-                    </span></li>
+               
+                <li class=" py-1 px-7">
+                    <div class="">
+                        <input class="bg-gray-200 px-3 py-1 rounded-lg mr-2 text-base sm:text-sm" type="text"
+                            v-model="newLabelName" placeholder="Label name">
+                        <button
+                            class="bg-button text-white hover:bg-white hover:text-button rounded-full py-1 px-3 sm:px-4 flex items-center mt-2"
+                            @click="createLabel">
+                            <span class="text-2xl">+</span>
+                            <span class="text-base sm:text-sm px-10">Add Label</span>
+                        </button>
+                    </div>
+                </li>
             </ul>
         </div>
+
     </div>
 </template>
   
 <script>
 export default {
     setup() {
-        return {};
+        return {
+            labels: [
+                { name: 'Personal', color: 'bg-gray-500' },
+                { name: 'School', color: 'bg-red-700' },
+                { name: 'Office', color: 'bg-yellow-800' }
+            ],
+            newLabelName: "",
+        };
     },
-};
+    methods: {
+        createLabel() {
+            if(this.newLabelName){
+                this.labels.push({
+                    name: this.newLabelName,
+                    color: "bg-blue-500"
+                })
+            }
+        }
+    },
+}
 </script>
   
 <style scoped>
@@ -93,7 +112,6 @@ export default {
     align-items: center;
     border-radius: 9999px;
     padding: 0.25rem 0.5rem;
-    font-size: 1rem;
 }
 
 .badge-dot {
