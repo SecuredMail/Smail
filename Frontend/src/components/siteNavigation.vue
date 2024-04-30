@@ -14,12 +14,14 @@
         <p class="text-2xl hidden sm:flex">SMAIL</p>
         <div class="flex items-center gap-3 flex-1 justify-end">
           <button
+            @click="navigateToLogin"
             class="mx-2 my-2 bg-gray-200 transition duration-150 ease-in-out focus:outline-none hover:bg-button hover:text-white rounded text-indigo-700 px-6 py-2 text-xs"
           >
             Sign In
           </button>
         </div>
         <button
+          @click="navigateToRegister"
           class="mx-2 my-2 bg-button transition duration-150 ease-in-out hover:bg-white hover:text-button rounded text-white px-6 py-2 text-xs hidden sm:flex"
         >
           Create an account
@@ -34,6 +36,16 @@ export default {
   setup() {
     return {};
   },
+  methods: {
+  navigateToLogin() {
+    this.$router.push({ name: 'login' }); // Ensure 'login' is the name of the route for LoginView
+  },
+  navigateToRegister() {
+    this.$router.push({ name: 'register' }); // Ensure 'login' is the name of the route for LoginView
+  },
+  
+}
+
 };
 </script>
 
