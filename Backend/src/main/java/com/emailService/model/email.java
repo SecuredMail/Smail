@@ -14,7 +14,7 @@ public class email {
     @JoinColumn(name = "sender_id", referencedColumnName = "id")
     private user sender;
     @ManyToOne
-    @JoinColumn(name = "sender_id", referencedColumnName = "id")
+    @JoinColumn(name = "receiver_id", referencedColumnName = "id")
     private user receiver;
     @Column(nullable = false)
     private String subject;
