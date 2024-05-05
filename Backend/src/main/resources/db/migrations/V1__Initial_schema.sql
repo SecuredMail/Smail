@@ -7,8 +7,7 @@ CREATE TABLE IF NOT EXISTS `users` (
     );
 
 -- Create 'emails' table
-CREATE TABLE IF NOT EXISTS `emails` (
-                                        `id` INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS `emails` (                                        `id` INT AUTO_INCREMENT PRIMARY KEY,
                                         `sender_id` INT NOT NULL,
                                         `receiver_id` INT NOT NULL,
                                         `subject` VARCHAR(255) NOT NULL,

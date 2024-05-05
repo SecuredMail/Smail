@@ -18,6 +18,11 @@ public class user {
 
     public user(){} // Default constructor for JPA
 
+    public user(String username, String password, String email){
+    this.username = username;
+    this.password = password;
+    this.email = email;
+    }
     // Getters and setters
     public Long getId() {
         return id;

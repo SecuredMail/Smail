@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70e7fac9-4395-4d18-810a-e31239af27aa" name="Changes" comment="" />
+    <list default="true" id="70e7fac9-4395-4d18-810a-e31239af27aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/com/emailService/config/flyway.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/resources/db/migrations/V1__Initial_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/resources/db/migrations/V1__Initial_schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
