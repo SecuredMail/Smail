@@ -6,16 +6,16 @@ import java.util.Date;
 
 @Entity
 @Table(name = "emails")
-public class email {
+public class Email {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
     @JoinColumn(name = "sender_id", referencedColumnName = "id")
-    private user sender;
+    private User sender;
     @ManyToOne
     @JoinColumn(name = "receiver_id", referencedColumnName = "id")
-    private user receiver;
+    private User receiver;
     @Column(nullable = false)
     private String subject;
     @Column(nullable = false)
@@ -24,7 +24,7 @@ public class email {
     @Column(nullable = false)
     private Date sentDate;
 
-    public email(){}
+    public Email(){}
 
     public Long getId() {
         return id;
@@ -34,19 +34,19 @@ public class email {
         this.id = id;
     }
 
-    public user getSender() {
+    public User getSender() {
         return sender;
     }
 
-    public void setSender(user sender) {
+    public void setSender(User sender) {
         this.sender = sender;
     }
 
-    public user getReceiver() {
+    public User getReceiver() {
         return receiver;
     }
 
-    public void setReceiverr(user receiver) {
+    public void setReceiverr(User receiver) {
         this.receiver = receiver;
     }
 

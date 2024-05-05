@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "users")
-public class user {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,9 +16,9 @@ public class user {
     @Column(nullable = false, unique = true)
     private String email;
 
-    public user(){} // Default constructor for JPA
+    public User(){} // Default constructor for JPA
 
-    public user(String username, String password, String email){
+    public User(String username, String password, String email){
     this.username = username;
     this.password = password;
     this.email = email;
