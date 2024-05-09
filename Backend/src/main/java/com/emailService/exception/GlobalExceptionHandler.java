@@ -11,8 +11,11 @@ public class GlobalExceptionHandler {
     public ResponseEntity<Object> handleEmailAlreadyExistsException(EmailAlreadyExistsException ex) {
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
     }
+    // Consolidated handler for all other exceptions
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<Object> handleGeneralException(Exception ex) {
-        return new ResponseEntity<>(ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+    public ResponseEntity<String> handleGeneralException(Exception ex) {
+        // Log the exception details to help with debugging
+        ex.printStackTrace();
+        return new ResponseEntity<>("Internal server error occurred: " + ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
