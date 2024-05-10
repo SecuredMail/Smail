@@ -42,8 +42,30 @@
     </div>
 </template>
 <script>
-export default {
+import UserService from '@/services/UserService'; // Adjust the path as necessary
 
+export default {
+    data() {
+        return {
+            user: {
+                firstName: '',
+                lastName: ''
+            }
+        };
+    },
+    methods: {
+        registerUser() {
+            UserService.createUser(this.user)
+                .then(response => {
+                    alert('Registration successful');
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    console.error('Registration failed: ', error.response);
+                    alert('Registration failed');
+                });
+        }
+    }
 }
 </script>
 

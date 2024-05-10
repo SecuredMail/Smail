@@ -9,8 +9,10 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(nullable = false, unique = true)
-    private String username;
+    @Column(nullable = false, name = "firstname")
+    private String firstName;
+    @Column(nullable = false, name = "lastname")
+    private String lastName;
     @Column(nullable = false)
     private String password;
     @Column(nullable = false, unique = true)
@@ -18,10 +20,11 @@ public class User {
 
     public User(){} // Default constructor for JPA
 
-    public User(String username, String password, String email){
-    this.username = username;
-    this.password = password;
-    this.email = email;
+    public User(String firstName, String lastName, String password, String email){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+        this.email = email;
     }
     // Getters and setters
     public Long getId() {
@@ -32,12 +35,20 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setFirstName(String username) {
+        this.firstName = username;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getPassword() {
