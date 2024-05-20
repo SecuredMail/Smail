@@ -4,13 +4,7 @@
   >
     <nav class="container flex flex-col sm: flex-row gap-4 text-black py-6">
       <div class="flex items-center gap-3">
-        <img
-          align-lest
-          width="64"
-          height="64"
-          src="https://img.icons8.com/nolan/64/gmail-new.png"
-          alt="gmail-new"
-        />
+        <MailLogo />
         <p class="text-2xl hidden sm:flex">SMAIL</p>
         <div class="flex items-center gap-3 flex-1 justify-end">
           <button
@@ -32,9 +26,13 @@
 </template>
 
 <script>
+import MailLogo from "./mailLogo.vue"
 export default {
   setup() {
     return {};
+  },
+  components: {
+    MailLogo
   },
   methods: {
   navigateToLogin() {
